@@ -26,6 +26,10 @@ if caminho_arquivo.exists():
 else:
     print("Arquivo não encontrado")
 
+# criando um arquivo
+arquivo_novo = Path("arquivo_novo.txt")
+arquivo_novo.touch() # cria um novo arquivo
+
 caminho_arquivo.unlink() # remove o arquivo
 
 nova_pasta = Path("Nova_Pasta")
